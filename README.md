@@ -1,8 +1,9 @@
 # My Latex resume
 
- * Is a [nicely typeset 2-page PDF](https://rawgithub.com/cies/resume/master/cies-breijs-resume.pdf) (click the link to download mine)
+ * Is a nicely typeset 1-page or 2-page PDF
  * Compiles with or without installing software (read more below).
  * Might well be a starting point for your very own Latex resume.
+ * Based on [this Github project by cies](https://github.com/cies/resume).
 
 Linkedin serves well, but not in all situations.  At some point my profile
 just cluttered up, while all I wanted 'them' to have is a good looking
@@ -83,7 +84,6 @@ command with `./pdflatex`.
 
 ## TADA
 
-  * Now uses [rawgithub.com](http://rawgithub.com) for in-browser viewing.
   * [ShareLatex](http://sharelatex.com) is awesome! Point it out to users.
   * When using `pdflatex` the `microtype` package kicks in
   * Made switching to the [Linux Libertine](http://www.linuxlibertine.org) font easier
@@ -99,5 +99,3 @@ command with `./pdflatex`.
 ## Terms of sharing
 
 Feel free to use, copy, fork, share, study and/or modify it because the LaTeX source code of the `resume.sty` file is [MIT](http://en.wikipedia.org/wiki/MIT_License) licensed.
-
-The text of my resume in the `cies-breijs-resume.tex` file is [CC-NC-ND](http://creativecommons.org/licenses/by-nc-nd/3.0/) licensed.
