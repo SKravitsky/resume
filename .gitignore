@@ -3,3 +3,6 @@
 *.out
 *.pdf
 *.aux
+*.fls
+*.gz
+*latexmk
