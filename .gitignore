@@ -1,7 +1,6 @@
 # Removing output files
 *.log
 *.out
-*.pdf
 *.aux
 *.fls
 *.gz
