@@ -57,9 +57,32 @@ directory to the root of the project and do:
         sudo apt-get install texlive-xetex texlive-latex-recommended tex-gyre
         ./xelatex *-resume.pdf
 
+If you'd like to use fontawesome then you'll need to include it's font, the easeist
+way to do this is the below command (1.4GB Installed):
+
+        sudo apt-get install texlive-fonts-extra
+
 If all went well an updated version of the PDF is found in your current
-working directory, alongside a bunch of `.log` and `.aux` files that
-you can safely ignore.
+working directory, alongside a bunch of additional files that you can safely ignore
+if the filetype is located in the `.gitignore`.
+
+### Using XeLaTex in VS Code
+
+If you're using XeLatex in VS Code then you may have to make a change to your settings.
+Press `Ctrl + Shift + P` then select `Preferences: Open Settings (JSON)` and paste the below in:
+
+        "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-xelatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        }],
 
 ### Using pdfLatex
 
